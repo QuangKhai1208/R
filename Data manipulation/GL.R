@@ -113,16 +113,6 @@
     library(p, character.only = TRUE, quietly = T)
   }
   # install.packages('pdftools', type='source')
-  setwd("C:/Users/KhaiPham/OneDrive - Grant Thornton (Vietnam) Limited/Quang Khai/Mar Project/Rstudio")
-  wd = getwd()
-  wd
-  source(paste0(wd, "/IFRC_TRAINEE_2020_LIBRARY.R"), echo = F)
-  # source(paste0(wd, "/thuonglibrary.R"), echo = F)
-  # source(paste0(wd, "/NCKH_LIBRARY.R"), echo = F)
-  # source("/Users/phamlequangkhai/Documents/WinBlack_Mac/R/KLTN_LIBRARY.R", echo = F)
-  # source("/Library/Frameworks/R.framework/Versions/4.1/Resources/library/ccgarch/dcc_estimate.R", echo = F)
-  RESULT           = paste0(wd, '/RESULT')
-  DATA_source      = paste0(wd, '/DATA_RAW/')
   textbox_to_table = function(dir, excel_File_Name){
     f     = extract_Textbox_From_Excel(dir, excel_File_Name)
     f1    = str_split(f, "Tên tài khoản")
